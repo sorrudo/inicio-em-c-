@@ -11,11 +11,13 @@
 
      cout << "Digite Um Número ?" << endl;
      int chute;
-
+     
      cin >> chute;
      cout <<"O valor do seu chute é: " << chute << endl;
 
-     if(chute ==numero_secreto){
+    bool acertou = chute == numero_secreto;
+
+     if(acertou){
          cout << "Parabéns você acertou o número !" << endl;
      }else {
          cout << "Infelizmente você errou o chute" << endl;
